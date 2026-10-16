@@ -217,3 +217,15 @@ h1 em { color: var(--clay); font-weight: 400; }
 .form-intro { margin-bottom: 29px; }
 .form-intro h1, .reservation-heading h1 { margin-bottom: 9px; font-size: 44px; }
 .booking-layout { display: grid; grid-template-columns: minmax(0, 1fr) 344px; align-items: start; gap: 21px; }
+.guest-form { padding: 25px; border: 1px solid #d3cec1; border-radius: 12px; background: var(--surface); }
+.section-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-bottom: 21px; }
+.section-heading h2 { margin: 0; font-size: 18px; font-weight: 600; letter-spacing: -0.025em; }
+.step-indicator { color: var(--muted); font-size: 11px; font-variant-numeric: tabular-nums; }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 17px 14px; }
+.field-wide { grid-column: 1 / -1; }
+.guest-form .field input { min-height: 46px; }
+.confirm-button { margin-top: 22px; }
+.form-footnote { margin: 11px 0 0; color: var(--muted); font-size: 11px; }
+.stay-summary { position: sticky; top: 20px; padding: 22px; border-radius: 12px; background: #e8e7dc; }
+.stay-summary h2 { margin: 0 0 14px; font-size: 16px; font-weight: 600; }
+.stay-summary h3 { margin: 0 0 4px; font-size: 18px; font-weight: 600; text-transform: capitalize; }
