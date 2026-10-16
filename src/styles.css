@@ -67,3 +67,28 @@ button, input, select { font: inherit; }
 button, a, input, select { -webkit-tap-highlight-color: transparent; }
 
 a { color: inherit; text-underline-offset: 0.2em; }
+
+a:hover { color: var(--clay-dark); }
+
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+
+.app-shell { display: flex; min-height: 100vh; flex-direction: column; }
+
+.topbar {
+  display: flex;
+  min-height: 76px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 12px max(28px, calc((100vw - var(--content-width)) / 2));
+  background: #e8e3d7;
+  border-bottom: 1px solid #d5cfc1;
+}
+
+.brand { display: inline-flex; align-items: center; gap: 11px; color: var(--ink); font-size: 18px; font-weight: 600; letter-spacing: -0.04em; text-decoration: none; }
+.brand:hover { color: var(--ink); }
+.brand-mark { display: grid; width: 34px; height: 34px; place-items: center; border: 1px solid var(--sage); border-radius: 50%; color: var(--sage); font-family: var(--serif); font-size: 19px; }
+.brand-dot { color: var(--clay); }
+.topbar-note { display: flex; align-items: center; gap: 9px; color: #4e584b; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; }
+.status-dot, .open-badge span, .status-pill i { width: 7px; height: 7px; border-radius: 50%; background: #55734f; }
+.topbar-link { color: #3d493e; font-size: 13px; font-weight: 600; text-decoration-thickness: 1px; }
