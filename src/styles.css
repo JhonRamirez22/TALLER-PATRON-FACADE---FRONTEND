@@ -264,3 +264,14 @@ h1 em { color: var(--clay); font-weight: 400; }
 .reservation-aside .summary-total { margin-bottom: 15px; border-top: 1px solid #d3cec1; }
 .reservation-aside .summary-total strong { font-size: 20px; }
 .aside-note { margin: 14px 0 0; color: var(--muted); font-size: 11px; }
+.service-list { border-top: 1px solid var(--line); }
+.service-row { display: grid; grid-template-columns: 38px minmax(0, 1fr) auto auto; align-items: center; gap: 11px; padding: 13px 1px; border-bottom: 1px solid var(--line); }
+.service-icon { display: grid; width: 34px; height: 34px; place-items: center; border-radius: 50%; background: #e9e5d9; color: var(--sage); }
+.service-icon .icon { width: 18px; height: 18px; }
+.service-info { display: grid; gap: 2px; }
+.service-info strong { font-size: 13px; font-weight: 600; }
+.service-info small { color: var(--muted); font-size: 11px; }
+.service-price { color: #48473e; font-size: 12px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.key-panel { display: flex; align-items: flex-start; gap: 16px; padding: 21px; border-radius: 12px; background: #3c4f3e; color: #fffdf7; }
+.key-panel h2 { margin: 0 0 4px; font-family: var(--serif); font-size: 24px; font-weight: 400; }
+.key-panel p { max-width: 50ch; margin: 0 0 12px; color: #e2e7dc; font-size: 12px; }
