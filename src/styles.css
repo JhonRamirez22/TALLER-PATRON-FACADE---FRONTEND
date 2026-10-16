@@ -181,3 +181,14 @@ h1 em { color: var(--clay); font-weight: 400; }
 .room-card-body { display: grid; gap: 3px; }
 .room-card-title { font-size: 14px; font-weight: 600; }
 .room-card-meta { color: var(--muted); font-size: 12px; text-transform: capitalize; }
+.room-card-price { display: grid; gap: 2px; justify-items: end; white-space: nowrap; }
+.room-card-price strong { font-size: 15px; font-variant-numeric: tabular-nums; }
+.room-card-price small { color: var(--muted); font-size: 11px; }
+.room-arrow { min-width: 77px; color: var(--sage); font-size: 11px; font-weight: 600; text-align: right; }
+.price-preview { position: sticky; top: 20px; padding: 21px; border: 1px solid #c9c5b8; border-radius: 12px; background: var(--surface-muted); }
+.preview-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.preview-heading h3 { margin: 0; font-family: var(--serif); font-size: 23px; font-weight: 400; }
+.season-pill { padding: 5px 9px; border-radius: 999px; background: #dce4d6; color: #354b38; font-size: 10px; font-weight: 700; letter-spacing: 0.04em; }
+.preview-room { margin: 11px 0 19px; color: var(--muted); font-size: 13px; text-transform: capitalize; }
+.preview-room span { margin: 0 4px; }
+.preview-line, .summary-line { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 12px 0; border-top: 1px solid #d3cfc3; font-size: 13px; }
