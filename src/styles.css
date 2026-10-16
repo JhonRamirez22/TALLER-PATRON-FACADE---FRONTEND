@@ -106,3 +106,38 @@ h1 em { color: var(--clay); font-weight: 400; }
 .search-panel { margin-top: 30px; padding: 22px 24px 24px; border: 1px solid #d5d0c4; border-radius: 12px; background: #ede9df; }
 .search-panel-title { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-bottom: 17px; }
 .search-panel-title h2, .section-heading h2, .retrieve-reservation h2, .reservation-aside h2 { margin: 0; font-size: 19px; font-weight: 600; letter-spacing: -0.025em; }
+.open-badge { display: inline-flex; align-items: center; gap: 8px; color: var(--sage); font-size: 12px; font-weight: 600; }
+.open-badge span { width: 6px; height: 6px; }
+.search-form { display: grid; grid-template-columns: minmax(150px, 1fr) minmax(150px, 1fr) minmax(160px, 1fr) auto; align-items: end; gap: 12px; }
+.field { display: grid; min-width: 0; gap: 6px; color: #46453e; font-size: 12px; font-weight: 600; }
+.field input, .field select, .retrieve-reservation input {
+  width: 100%;
+  min-height: 44px;
+  padding: 9px 11px;
+  border: 1px solid #c8c2b5;
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 14px;
+}
+.field input:hover, .field select:hover, .retrieve-reservation input:hover { border-color: #938b7b; }
+.field input:disabled, .field select:disabled { opacity: 0.6; }
+.button {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 10px 16px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-decoration: none;
+  transition: color 160ms ease, background-color 160ms ease, border-color 160ms ease;
+}
+.button:disabled { cursor: not-allowed; opacity: 0.55; }
+.button-primary { background: var(--sage); color: #fffdf7; }
+.button-primary:hover:not(:disabled) { background: #364b39; color: #fffdf7; }
