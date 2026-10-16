@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'DM Sans';
+  src: url('./assets/fonts/dm-sans-latin.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Serif Display';
+  src: url('./assets/fonts/dm-serif-display-latin.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Serif Display';
+  src: url('./assets/fonts/dm-serif-display-italic-latin.woff2') format('woff2');
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #302e28;
+  background: #f5f2ea;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  font-optical-sizing: auto;
+  --paper: #f5f2ea;
+  --surface: #fffdf7;
+  --surface-muted: #ebe7dc;
+  --ink: #302e28;
+  --muted: #625f56;
+  --line: #d6d1c4;
+  --clay: #8d472f;
+  --clay-dark: #713722;
+  --sage: #455b47;
+  --sage-light: #e4e9df;
+  --danger: #852e2e;
+  --focus: #734321;
+  --serif: 'DM Serif Display', Georgia, serif;
+  --content-width: 1192px;
+  font-variant-numeric: tabular-nums;
+}
+
+* { box-sizing: border-box; }
+
+html { min-width: 320px; scroll-behavior: smooth; }
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.5;
+  accent-color: var(--sage);
+}
+
+::selection { color: var(--surface); background: var(--sage); }
+
+button, input, select { font: inherit; }
+
+button, a, input, select { -webkit-tap-highlight-color: transparent; }
+
+a { color: inherit; text-underline-offset: 0.2em; }
