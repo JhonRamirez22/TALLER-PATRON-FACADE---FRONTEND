@@ -240,3 +240,15 @@ h1 em { color: var(--clay); font-weight: 400; }
 .summary-total strong { font-size: 18px; font-variant-numeric: tabular-nums; }
 .summary-note { display: block; color: var(--muted); font-size: 11px; }
 .page-empty { min-height: 370px; }
+.page-empty .button { margin-top: 4px; }
+
+.page-reservation { padding-top: 29px; }
+.reservation-heading { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 27px; }
+.reservation-reference { display: inline-block; margin-top: 9px; color: var(--muted); font-size: 11px; font-variant-numeric: tabular-nums; }
+.reservation-heading h1 { margin-bottom: 8px; }
+.status-pill { display: inline-flex; align-items: center; gap: 8px; flex: none; margin-bottom: 4px; padding: 8px 11px; border: 1px solid #b6c5ae; border-radius: 999px; background: #e4ebdf; color: #304937; font-size: 11px; font-weight: 600; }
+.status-pill i { background: #4c7449; }
+.status-checkout { border-color: #c6beb0; background: #ebe7de; color: #514b43; }
+.status-checkout i { background: #756b5e; }
+.reservation-layout { display: grid; grid-template-columns: minmax(0, 1fr) 326px; align-items: start; gap: 20px; }
+.reservation-main { display: grid; gap: 20px; }
