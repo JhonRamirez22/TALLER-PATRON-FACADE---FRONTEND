@@ -192,3 +192,16 @@ h1 em { color: var(--clay); font-weight: 400; }
 .preview-room { margin: 11px 0 19px; color: var(--muted); font-size: 13px; text-transform: capitalize; }
 .preview-room span { margin: 0 4px; }
 .preview-line, .summary-line { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 12px 0; border-top: 1px solid #d3cfc3; font-size: 13px; }
+.preview-line small { display: block; margin-top: 3px; color: var(--muted); font-size: 11px; }
+.preview-line strong, .summary-line strong { font-size: 14px; font-variant-numeric: tabular-nums; }
+.preview-note { margin: 2px 0 18px; color: var(--muted); font-size: 11px; }
+.price-preview-empty { display: flex; min-height: 151px; align-items: center; color: var(--muted); font-size: 13px; }
+.price-preview-empty p { margin: 0; }
+.empty-state { display: grid; min-height: 230px; justify-items: center; align-content: center; padding: 26px; border: 1px dashed #c5bfaf; border-radius: 10px; text-align: center; }
+.empty-icon { width: 28px; height: 28px; margin-bottom: 12px; color: var(--sage); }
+.empty-state h3, .empty-state h1 { margin: 0 0 6px; font-size: 17px; font-weight: 600; }
+.empty-state h1 { font-family: var(--serif); font-size: 31px; font-weight: 400; }
+.empty-state p { margin: 0 0 16px; color: var(--muted); font-size: 13px; }
+
+.retrieve-reservation { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-top: 48px; padding: 24px 0 0; border-top: 1px solid var(--line); }
+.retrieve-reservation h2 { font-size: 17px; }
