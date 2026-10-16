@@ -205,3 +205,15 @@ h1 em { color: var(--clay); font-weight: 400; }
 
 .retrieve-reservation { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-top: 48px; padding: 24px 0 0; border-top: 1px solid var(--line); }
 .retrieve-reservation h2 { font-size: 17px; }
+.retrieve-reservation p { margin: 3px 0 0; color: var(--muted); font-size: 12px; }
+.retrieve-reservation form { display: flex; width: min(540px, 58%); gap: 10px; }
+.retrieve-reservation input { min-width: 0; flex: 1; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; clip-path: inset(50%); }
+
+.page-booking { padding-top: 29px; }
+.back-link { display: inline-flex; align-items: center; margin-bottom: 29px; color: #465344; font-size: 13px; font-weight: 600; text-decoration: none; }
+.back-link .icon { width: 15px; height: 15px; }
+.back-link:hover { color: var(--clay-dark); }
+.form-intro { margin-bottom: 29px; }
+.form-intro h1, .reservation-heading h1 { margin-bottom: 9px; font-size: 44px; }
+.booking-layout { display: grid; grid-template-columns: minmax(0, 1fr) 344px; align-items: start; gap: 21px; }
