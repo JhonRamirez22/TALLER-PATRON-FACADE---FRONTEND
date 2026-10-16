@@ -252,3 +252,15 @@ h1 em { color: var(--clay); font-weight: 400; }
 .status-checkout i { background: #756b5e; }
 .reservation-layout { display: grid; grid-template-columns: minmax(0, 1fr) 326px; align-items: start; gap: 20px; }
 .reservation-main { display: grid; gap: 20px; }
+.stay-card { padding: 23px; border: 1px solid #d3cec1; border-radius: 12px; background: var(--surface); }
+.stay-card .section-heading { align-items: center; margin-bottom: 18px; }
+.room-number { display: grid; width: 42px; height: 42px; place-items: center; border-radius: 50%; background: #e4e9df; color: var(--sage); font-size: 14px; font-weight: 700; }
+.stay-facts { display: grid; grid-template-columns: 1fr 1fr; gap: 17px 12px; }
+.stay-facts div { display: grid; gap: 4px; }
+.stay-facts span, .invoice-meta span { color: var(--muted); font-size: 10px; font-weight: 700; letter-spacing: 0.06em; }
+.stay-facts strong, .invoice-meta strong { font-size: 13px; font-weight: 600; }
+.reservation-aside { position: sticky; top: 20px; padding: 22px; border: 1px solid #d3cec1; border-radius: 12px; background: #ede9df; }
+.reservation-aside > .summary-line:first-of-type { margin-top: 11px; }
+.reservation-aside .summary-total { margin-bottom: 15px; border-top: 1px solid #d3cec1; }
+.reservation-aside .summary-total strong { font-size: 20px; }
+.aside-note { margin: 14px 0 0; color: var(--muted); font-size: 11px; }
