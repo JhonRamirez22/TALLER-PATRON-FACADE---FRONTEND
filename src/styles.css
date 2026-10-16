@@ -275,3 +275,16 @@ h1 em { color: var(--clay); font-weight: 400; }
 .key-panel { display: flex; align-items: flex-start; gap: 16px; padding: 21px; border-radius: 12px; background: #3c4f3e; color: #fffdf7; }
 .key-panel h2 { margin: 0 0 4px; font-family: var(--serif); font-size: 24px; font-weight: 400; }
 .key-panel p { max-width: 50ch; margin: 0 0 12px; color: #e2e7dc; font-size: 12px; }
+.key-panel code { display: inline-block; padding: 7px 9px; border: 1px solid #718573; border-radius: 4px; background: #344637; color: #fffdf7; font-size: 12px; overflow-wrap: anywhere; }
+.key-icon { display: grid; width: 36px; height: 36px; flex: none; place-items: center; border: 1px solid #819280; border-radius: 50%; color: #e4e9df; }
+.key-icon .icon { width: 19px; height: 19px; }
+.page-state { min-height: 56vh; }
+.page-state .error-banner { margin: 20px 0; }
+
+.page-invoice { padding-top: 37px; }
+.invoice-card { max-width: 790px; margin: 0 auto; padding: 37px; border: 1px solid #d5d0c3; border-radius: 12px; background: var(--surface); }
+.invoice-head { display: grid; justify-items: center; padding-bottom: 26px; border-bottom: 1px solid var(--line); text-align: center; }
+.invoice-check { display: grid; width: 40px; height: 40px; margin-bottom: 14px; place-items: center; border-radius: 50%; background: #e4ebdf; color: var(--sage); font-size: 20px; }
+.invoice-check .icon { width: 19px; height: 19px; }
+.invoice-head h1 { margin: 0 0 7px; font-size: 36px; }
+.invoice-head p { margin: 0; color: var(--muted); font-size: 13px; }
