@@ -299,3 +299,84 @@ h1 em { color: var(--clay); font-weight: 400; }
 .invoice-totals > div { display: flex; justify-content: space-between; gap: 16px; color: var(--muted); font-size: 12px; }
 .invoice-totals strong { color: var(--ink); font-weight: 600; font-variant-numeric: tabular-nums; }
 .invoice-totals .invoice-total { margin-top: 4px; padding-top: 13px; border-top: 1px solid var(--line); color: var(--ink); font-size: 14px; font-weight: 600; }
+.invoice-total strong { font-size: 17px; }
+.invoice-foot { margin-top: 26px; padding-top: 14px; border-top: 1px solid var(--line); color: var(--muted); font-size: 11px; text-align: center; }
+.invoice-home { display: block; width: fit-content; margin: 20px auto 0; color: #465344; font-size: 13px; font-weight: 600; }
+
+.loading-state { display: flex; min-height: 96px; align-items: center; justify-content: center; gap: 11px; color: var(--muted); font-size: 13px; }
+.spinner { width: 18px; height: 18px; border: 2px solid #d6d1c4; border-top-color: var(--sage); border-radius: 50%; animation: spin 650ms linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.icon { display: inline-block; width: 20px; height: 20px; flex: none; }
+.site-footer { display: flex; justify-content: space-between; gap: 16px; padding: 18px max(28px, calc((100vw - var(--content-width)) / 2)); border-top: 1px solid var(--line); color: var(--muted); font-size: 10px; letter-spacing: 0.04em; }
+
+@media (max-width: 860px) {
+  .search-form { grid-template-columns: 1fr 1fr; }
+  .search-button { grid-column: 1 / -1; }
+  .results-layout, .booking-layout, .reservation-layout { grid-template-columns: minmax(0, 1fr) 300px; gap: 14px; }
+  .room-card { grid-template-columns: 48px minmax(0, 1fr) auto; gap: 11px; }
+  .room-card-number { width: 42px; height: 42px; }
+  .room-arrow { display: none; }
+}
+
+@media (max-width: 680px) {
+  .topbar { min-height: 64px; gap: 12px; padding-right: 20px; padding-left: 20px; }
+  .topbar-note { display: none; }
+  .topbar-link { font-size: 12px; }
+  .page { width: min(100% - 36px, var(--content-width)); padding-top: 32px; padding-bottom: 46px; }
+  .page-search { padding-top: 34px; }
+  .search-intro { padding-bottom: 24px; }
+  h1 { font-size: 43px; }
+  .intro-copy p { font-size: 14px; }
+  .search-panel { margin-top: 22px; padding: 18px 16px; }
+  .search-panel-title { align-items: center; }
+  .search-panel-title h2 { font-size: 17px; }
+  .open-badge { font-size: 10px; }
+  .search-form { grid-template-columns: 1fr 1fr; gap: 12px 9px; }
+  .field-type { grid-column: 1 / -1; }
+  .search-button { grid-column: 1 / -1; }
+  .results-section { margin-top: 30px; }
+  .results-heading { align-items: start; flex-direction: column; gap: 4px; margin-bottom: 12px; }
+  .results-heading h2 { font-size: 25px; }
+  .results-heading > span { font-size: 11px; }
+  .results-layout, .booking-layout, .reservation-layout { grid-template-columns: 1fr; }
+  .room-card { min-height: 76px; grid-template-columns: 42px minmax(0, 1fr) auto; gap: 9px; padding: 11px; }
+  .room-card-number { width: 38px; height: 38px; font-size: 12px; }
+  .room-card-title { font-size: 12px; }
+  .room-card-meta { font-size: 10px; }
+  .room-card-price strong { font-size: 13px; }
+  .room-card-price small { font-size: 9px; }
+  .price-preview { position: static; }
+  .retrieve-reservation { align-items: stretch; flex-direction: column; gap: 13px; margin-top: 35px; }
+  .retrieve-reservation form { width: 100%; }
+  .retrieve-reservation .button { padding-right: 11px; padding-left: 11px; white-space: nowrap; }
+  .form-intro h1, .reservation-heading h1 { font-size: 37px; }
+  .form-intro p, .reservation-heading p { font-size: 13px; }
+  .back-link { margin-bottom: 22px; }
+  .guest-form, .stay-card { padding: 18px 15px; }
+  .section-heading { align-items: flex-start; margin-bottom: 17px; }
+  .section-heading h2 { font-size: 16px; }
+  .form-grid { grid-template-columns: 1fr; gap: 13px; }
+  .field-wide { grid-column: auto; }
+  .stay-summary, .reservation-aside { position: static; padding: 18px; }
+  .reservation-heading { align-items: flex-start; flex-direction: column; gap: 12px; margin-bottom: 20px; }
+  .reservation-heading h1 { font-size: 35px; }
+  .reservation-heading p { max-width: 40ch; }
+  .status-pill { margin: 0; }
+  .service-row { grid-template-columns: 34px minmax(0, 1fr) auto; gap: 8px; }
+  .service-price { grid-column: 2; grid-row: 2; font-size: 11px; }
+  .service-row .button { grid-column: 3; grid-row: 1 / span 2; }
+  .key-panel { gap: 11px; padding: 16px; }
+  .key-panel h2 { font-size: 21px; }
+  .key-panel p { font-size: 11px; }
+  .key-panel code { font-size: 10px; }
+  .invoice-card { padding: 22px 16px; }
+  .invoice-head h1 { font-size: 29px; }
+  .invoice-head p { font-size: 12px; }
+  .invoice-meta { grid-template-columns: 1fr 1fr; row-gap: 14px; }
+  .invoice-table { min-width: 460px; }
+  .site-footer { flex-direction: column; gap: 4px; padding: 16px 20px; font-size: 9px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+}
